@@ -8,21 +8,60 @@
     <script defer src="script.js"></script>
     <style>
         body {
-            font-size: 2em; /* Doubled font size */
+            font-size: 1.5em; /* Adjusted font size */
+            background-color: #f9f9f9;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #0073e6;
+            color: white;
+        }
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+        h2 {
+            color: #0056b3;
         }
         button {
-            font-size: 1.5em;
-            padding: 15px;
+            font-size: 1.2em;
+            padding: 12px;
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+        img.profile {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .news-links a {
+            display: block;
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #0073e6;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Kalpesh Parmar</h1>
-        <button id="darkModeToggle">Toggle Dark Mode</button>
     </header>
     
     <section id="home">
+        <img src="your-photo.jpg" alt="Kalpesh Parmar" class="profile">
         <h2>Welcome!</h2>
         <p>ThingWorx Expert | IIoT & MES Specialist | Industrial Automation</p>
         <p>With 9 years of experience in Industrial Automation, I specialize in IIoT projects, MES applications, and real-time data integration with SAP and Windchill.</p>
@@ -32,56 +71,28 @@
     
     <section id="about">
         <h2>About Me</h2>
-        <p>Currently working as a ThingWorx Expert at IGW India Technologies Pvt. Ltd., I have led multiple projects in industrial digitization, shopfloor automation, and performance monitoring. My expertise includes ThingWorx (v8.5.2 - 9.3.9), Kepware, Power BI, and various industrial communication protocols.</p>
-    </section>
-    
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li><strong>IIoT Platforms:</strong> ThingWorx, RTPPM, DPM</li>
-            <li><strong>Database Management:</strong> SQL Server, PostgreSQL</li>
-            <li><strong>Programming:</strong> JavaScript, Python, VB</li>
-            <li><strong>Industrial Protocols:</strong> Modbus, RS232, Ethernet, Profibus</li>
-            <li><strong>SCADA/PLC:</strong> Allen Bradley, Siemens, Schneider</li>
-        </ul>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>MES Application Development</h3>
-            <p>Designed a fully digitized shopfloor system with a modular and scalable architecture.</p>
-        </div>
-        <div class="project">
-            <h3>Real-Time Production Monitoring</h3>
-            <p>Implemented RTPPM and initiated DPM for industrial performance optimization.</p>
-        </div>
-        <div class="project">
-            <h3>Gear System Order Processing</h3>
-            <p>Enhanced system performance and ensured seamless integration with SAP & Windchill.</p>
-        </div>
-    </section>
-    
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li>ThingWorx Fundamental Certification – PTC University</li>
-            <li>Certified Ethical Hacker (CEH) – UN Council</li>
-            <li>PG Diploma in Industrial Automation – Prolific Systems</li>
-        </ul>
+        <p>Currently working as a ThingWorx Expert at IGW India Technologies Pvt. Ltd., I have led multiple projects in industrial digitization, shopfloor automation, and performance monitoring.</p>
     </section>
     
     <section id="contact">
         <h2>Contact Me</h2>
+        <form action="mailto:Kalpeshparmar987@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Email</button>
+        </form>
         <p>Email: <a href="mailto:Kalpeshparmar987@gmail.com">Kalpeshparmar987@gmail.com</a></p>
         <p>Phone: +91-9898875046</p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/kalpesh-parmar-1a341092">linkedin.com/in/kalpesh-parmar-1a341092</a></p>
-        <form id="contactForm">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+    </section>
+    
+    <section id="news">
+        <h2>Today's News</h2>
+        <div class="news-links">
+            <a href="https://www.thehindu.com/" target="_blank">The Hindu</a>
+            <a href="https://timesofindia.indiatimes.com/" target="_blank">Times of India</a>
+        </div>
     </section>
 </body>
 </html>
