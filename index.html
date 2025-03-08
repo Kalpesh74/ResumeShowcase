@@ -3,36 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume - Kalpesh74</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        iframe {
-            display: block;
-            margin: 0 auto;
-            border: none;
-        }
-        p {
-            text-align: center;
-            color: #555;
-        }
-    </style>
+    <title>Kalpesh's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <h1>My Resume</h1>
-    <iframe
-        src="https://drive.google.com/file/d/1Rbo0xHXO2krzIT_gHS3lDwdA61MRVLm7/preview"
-        width="100%"
-        height="850px">
-    </iframe>
-    <p>If you cannot see the document, you can <a href="https://drive.google.com/file/d/1Rbo0xHXO2krzIT_gHS3lDwdA61MRVLm7/view?usp=sharing" target="_blank">No need to download it from here</a>.</p>
+    <header>
+        <h1>Kalpesh's Portfolio</h1>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+    </header>
+    
+    <section id="home">
+        <h2>Welcome!</h2>
+        <p>I am Kalpesh, a ThingWorx Developer with 9 years of experience in Industrial Automation.</p>
+        <a href="resume.pdf" download><button>Download Resume</button></a>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Smart Factory Dashboard</h3>
+            <p>Developed an IIoT-enabled dashboard using ThingWorx.</p>
+        </div>
+        <div class="project">
+            <h3>Energy Monitoring System</h3>
+            <p>Optimized industrial energy usage with real-time analytics.</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
 </body>
 </html>
